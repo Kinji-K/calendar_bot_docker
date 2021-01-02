@@ -1,0 +1,15 @@
+version: '3'
+services:
+   calendar_python:
+     env_file: .env
+     build:
+       context: .
+       args:
+         UID: $UID
+         GID: $GID
+     container_name: 'calendar_python'
+     restart: always
+     working_dir: "/opt/working"
+     tty: true
+     volumes:
+       - ./working:/opt/working

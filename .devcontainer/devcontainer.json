@@ -1,0 +1,15 @@
+{
+	"name": "Remote-Calendar-python",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "calendar_python",
+	"workspaceFolder": "/opt/working",
+	"remoteUser": "user",
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	"extensions": [
+		"ms-python.python"
+	]
+}
